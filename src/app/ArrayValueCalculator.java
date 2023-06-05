@@ -15,7 +15,7 @@ public class ArrayValueCalculator {
                 try {
                     sum += Integer.parseInt(array[i][j]);
                 } catch (NumberFormatException e) {
-                    throw new ArrayDataException("Invalid data at index [" + i + "][" + j + "][", e);
+                    throw new ArrayDataException("Invalid data at index [" + i + "][" + j + "]", e);
                 }
             }
         }
