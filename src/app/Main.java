@@ -11,15 +11,9 @@ public class Main {
                 {"13", "14", "15", "16"}
         };
 
-        try {
-            int result1 = calculator.doCalc(array1);
-            System.out.println("Result: " + result1);
-        } catch (ArraySizeException e) {
-            System.out.println("ArraySizeException: " + e.getMessage());
-        } catch (ArrayDataException e) {
-            System.out.println("ArrayDataException: " + e.getMessage());
-            System.out.println("Cause: " + e.getCause().getMessage());
-        }
+        int result1 = calculator.doCalc(array1);
+        System.out.println("Result: " + result1);
+
         String[][] array2 = {
                 {"1", "2", "3", "4"},
                 {"5", "6", "7", "8"},
@@ -27,15 +21,7 @@ public class Main {
                 {"13", "14", "15", "16"}
         };
 
-        try {
-            int result2 = calculator.doCalc(array2);
-            System.out.println("Result: " + result2);
-        } catch (ArraySizeException e) {
-            System.out.println("ArraySizeException: " + e.getMessage());
-        } catch (ArrayDataException e) {
-            System.out.println("ArrayDataException: " + e.getMessage());
-            System.out.println("Cause: " + e.getCause().getMessage());
-        }
-
+        int result2 = calculator.doCalc(array2);
+        System.out.println("Result: " + result2);
     }
 }

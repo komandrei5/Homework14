@@ -1,5 +1,8 @@
 package app;
 
+import app.exceptions.ArrayDataException;
+import app.exceptions.ArraySizeException;
+
 import java.util.Arrays;
 
 public class ArrayValueCalculator {
